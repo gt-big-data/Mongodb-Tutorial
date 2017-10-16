@@ -4,6 +4,8 @@ db = MongoClient('mongodb://143.215.138.132:27017')['big_data']
 
 limit = {'$limit': 10000}
 
+match = {'$match': {'author_name': '511 New York'}}
+
 pipeline = [limit]
 
 author_dict = {}
